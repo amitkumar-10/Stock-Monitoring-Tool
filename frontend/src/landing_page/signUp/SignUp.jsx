@@ -33,7 +33,7 @@ const Signup = () => {
     toast.success(response.data.message || "Signup successful");
     
     // Redirect to local login or dashboard
-    window.location.href = "http://localhost:5174/";  // change if needed
+    window.location.href = "https://stock-monitoring-tool-pink.vercel.app/"; 
   } catch (error) {
     const msg = error?.response?.data?.message || "Signup failed. Please try again.";
     toast.error(msg);
