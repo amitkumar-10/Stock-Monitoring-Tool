@@ -20,8 +20,8 @@ const app = express();
 app.use(express.json());
 
 const allowedOrigins = [
-  "https://stock-monitoring-tool-2bmm.vercel.app/",
-  "https://stock-monitoring-tool-pink.vercel.app/",
+  "https://stock-monitoring-tool-2bmm.vercel.app",
+  "https://stock-monitoring-tool-pink.vercel.app",
 ];
 
 app.use(cors({
