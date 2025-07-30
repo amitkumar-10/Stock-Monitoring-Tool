@@ -129,14 +129,14 @@ const BuyActionWindow = ({ uid }) => {
         <div className="summary">
           <p><strong>Stock:</strong> {uid || "N/A"}</p>
           <p>
-            <strong>Unit Price:</strong>{" "}
+            <strong>Unit price:</strong>{" "}
             {isLoading ? "Loading..." : `₹${stockPrice.toFixed(2)}`}
           </p>
           <p>
             <strong>Brokerage per stock: </strong> ₹{brokerage.toFixed(2)}
           </p>
            <p>
-            <strong>Total price (Qty × Price): </strong> ₹{totalPrice.toFixed(2)}
+            <strong>Total price (qty × price): </strong> ₹{totalPrice.toFixed(2)}
           </p>
           <span>
             <strong>Total payable amount: </strong> ₹{requiredAmount.toFixed(2)}
