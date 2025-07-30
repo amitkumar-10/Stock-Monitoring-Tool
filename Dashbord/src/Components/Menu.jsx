@@ -19,7 +19,7 @@ const Menu = () => {
 
   const handleLogout = () => {      /// logout 
     localStorage.removeItem("token"); 
-    window.location.href = 'http://localhost:5173'
+    window.location.href = 'https://stock-monitoring-tool-2bmm.vercel.app/'
   };
 
   return (
