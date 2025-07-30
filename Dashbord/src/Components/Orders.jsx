@@ -9,7 +9,7 @@ const Orders = () => {
 
   const fetchOrders = () => {
     axios
-      .get("http://localhost:8080/allOrder")
+      .get("https://stock-monitoring-tool-9s17.onrender.com/allOrder")
       .then((res) => {
         console.log("Fetched Orders:", res.data);
         setAllOrder(res.data);
@@ -44,7 +44,7 @@ const Orders = () => {
     const finalSellPrice = unitPrice * qty - brokerage * qty;
 
     axios
-      .post("http://localhost:8080/sellOrder", {
+      .post("https://stock-monitoring-tool-9s17.onrender.com/sellOrder", {
         id,
         sellQty: qty,
         sellPrice: finalSellPrice,
