@@ -133,14 +133,14 @@ const BuyActionWindow = ({ uid }) => {
             {isLoading ? "Loading..." : `₹${stockPrice.toFixed(2)}`}
           </p>
           <p>
-            <strong>Brokerage Per Stock:</strong> ₹{brokerage.toFixed(2)}
+            <strong>Brokerage per stock: </strong> ₹{brokerage.toFixed(2)}
           </p>
            <p>
-            <strong>Total Price (Qty × Price):</strong> ₹{totalPrice.toFixed(2)}
+            <strong>Total price (Qty × Price): </strong> ₹{totalPrice.toFixed(2)}
           </p>
           <span>
-            <strong>Total Pay Amount :</strong> ₹{requiredAmount.toFixed(2)}
-            <p>Including Brockrage</p>
+            <strong>Total payable amount: </strong> ₹{requiredAmount.toFixed(2)}
+            <p>(Including brockrage)</p>
           </span>
         </div>
 
