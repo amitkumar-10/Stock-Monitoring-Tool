@@ -28,7 +28,7 @@ const BuyActionWindow = ({ uid }) => {
 
     setIsLoading(true);
     axios
-      .get(`http://localhost:8080/getStockPrice?name=${encodeURIComponent(uid)}`)
+      .get(`https://stock-monitoring-tool-9s17.onrender.com/getStockPrice?name=${encodeURIComponent(uid)}`)
       .then((res) => {
         console.log("Fetched price:", res.data);
         if (res.data.price) {
@@ -75,7 +75,7 @@ const BuyActionWindow = ({ uid }) => {
     }
 
     try {
-      await axios.post("http://localhost:8080/newOrder", {
+      await axios.post("https://stock-monitoring-tool-9s17.onrender.com/newOrder", {
         name: uid, // Use uid directly as the stock name
         qty: stockQuantity,
         price: stockPrice,
