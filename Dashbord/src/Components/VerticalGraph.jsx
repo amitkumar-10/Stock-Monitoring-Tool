@@ -4,8 +4,10 @@ import {
   LinearScale,
   CategoryScale,
   BarElement,
+  BarController,
   PointElement,
   LineElement,
+  LineController,
   Legend,
   Tooltip,
 } from "chart.js";
@@ -16,12 +18,15 @@ import {
   getElementsAtEvent,
 } from "react-chartjs-2";
 
+// ✅ Register required controllers and elements
 ChartJS.register(
   LinearScale,
   CategoryScale,
   BarElement,
+  BarController,
   PointElement,
   LineElement,
+  LineController,
   Legend,
   Tooltip
 );
@@ -60,16 +65,17 @@ const VerticalGraph = ({ allHolding }) => {
         data: allHolding.map((item) => item.avg),
       },
       {
-        type: 'bar',
-        label: 'Changes',
-        backgroundColor: allHolding.map(item => {
-        const value = parseFloat(item.net.replace('%', ''));
-            return value < 0 ? '#FF2C2C' : '#5E936C'; // or use 'blue' instead of green if you like
+        type: "bar",
+        label: "Changes",
+        backgroundColor: allHolding.map((item) => {
+          const value = parseFloat(item.net.replace("%", ""));
+          return value < 0 ? "#FF2C2C" : "#5E936C";
         }),
-        borderColor: 'white',
+        borderColor: "white",
         borderWidth: 5,
-        data: allHolding.map((item) => parseFloat(item.net.replace("%", ""))),
-
+        data: allHolding.map((item) =>
+          parseFloat(item.net.replace("%", ""))
+        ),
       },
     ],
   };
@@ -82,7 +88,10 @@ const VerticalGraph = ({ allHolding }) => {
     const element = getElementAtEvent(chart, event);
 
     if (dataset.length) {
-      console.log("Dataset clicked:", data.datasets[dataset[0].datasetIndex].label);
+      console.log(
+        "Dataset clicked:",
+        data.datasets[dataset[0].datasetIndex].label
+      );
     }
 
     if (element.length) {
