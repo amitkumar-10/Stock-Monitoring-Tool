@@ -21,7 +21,7 @@ const Login = () => {
       // Set cookie (handled by server using res.cookie)
       if (res.status === 200) {
         toast.success("Signup successful");
-        window.location.href = "http://localhost:5174/";
+        window.location.href = "https://stock-monitoring-tool-pink.vercel.app/";
       }
     } catch (err) {
       toast.error("Signup failed. Please try again.");
@@ -61,7 +61,7 @@ const Login = () => {
           </Link>
         </p>
       </form>
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={2500} />
     </div>
   );
 };
