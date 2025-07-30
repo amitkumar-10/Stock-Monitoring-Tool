@@ -136,7 +136,7 @@ const BuyActionWindow = ({ uid }) => {
             <strong>Total Price (Qty × Price):</strong> ₹{totalPrice.toFixed(2)}
           </p>
           <p>
-            <strong>Brokerage:</strong> ₹{brokerage.toFixed(2)}
+            <strong>Brokerage Per Stock:</strong> ₹{brokerage.toFixed(2)}
           </p>
           <span>
             <strong>Margin required:</strong> ₹{requiredAmount.toFixed(2)}
