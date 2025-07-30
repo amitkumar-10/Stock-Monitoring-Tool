@@ -160,7 +160,7 @@ const BuyActionWindow = ({ uid }) => {
           </button>
         </div>
       </form>
-      <ToastContainer position="top-right" autoClose={3000} />
+      <ToastContainer position="top-right" autoClose={2000} />
     </div>
   );
 };
