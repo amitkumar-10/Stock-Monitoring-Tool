@@ -13,7 +13,7 @@ const Login = () => {
     e.preventDefault();
 
     try {
-      const res = await axios.post("http://localhost:8080/signin", {
+      const res = await axios.post("https://stock-monitoring-tool-9s17.onrender.com/signin", {
         email:email,
         password: password,
       });
