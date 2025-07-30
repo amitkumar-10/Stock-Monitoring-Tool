@@ -20,7 +20,7 @@ const app = express();
 app.use(express.json());
 
 const allowedOrigins = [
-  "http://localhost:5173",
+  "https://stock-monitoring-tool-2bmm.vercel.app/",
   "https://stock-monitoring-tool-pink.vercel.app/",
 ];
 
