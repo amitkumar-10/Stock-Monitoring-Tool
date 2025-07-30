@@ -26,7 +26,7 @@ const Signup = () => {
   e.preventDefault();
 
   try {
-    const response = await axios.post("http://localhost:8080/signup", formData, {
+    const response = await axios.post("https://stock-monitoring-tool-9s17.onrender.com/signup", formData, {
       withCredentials: true
     });
 
