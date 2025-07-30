@@ -6,7 +6,7 @@ export default function Holding() {
     const [allHolding ,setAllHolding] = useState([]);
 
     useEffect(()=>{
-      axios.get("http://localhost:8080/allHolding").then((res)=>{
+      axios.get("https://stock-monitoring-tool-9s17.onrender.com/allHolding").then((res)=>{
         console.log(res.data);
         setAllHolding(res.data);
         console.log("hello");
