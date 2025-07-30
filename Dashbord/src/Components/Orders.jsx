@@ -76,7 +76,7 @@ const Orders = () => {
 
   return (
     <div className="orders">
-      <ToastContainer position="top-center" autoClose={3000} />
+      <ToastContainer position="top-center" autoClose={2500} />
 
       {allOrder.length === 0 ? (
         <div className="no-orders">
