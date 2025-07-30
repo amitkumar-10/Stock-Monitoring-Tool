@@ -84,7 +84,7 @@ const BuyActionWindow = ({ uid }) => {
       });
 
       toast.success("Order placed successfully!");
-      window.location.href = "http://localhost:5174/orders";
+      window.location.href = "https://stock-monitoring-tool-pink.vercel.app/orders";
       setTimeout(() => context.closeBuyWindow(), 500);
     } catch (error) {
       console.error("Error placing order:", error);
